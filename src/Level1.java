@@ -5,9 +5,6 @@ public class Level1 {
         int[] newF = Arrays.copyOf(F, N);
         int[] sortF = Arrays.copyOf(F, N);
         Arrays.sort(sortF);
-        if (Arrays.equals(sortF, F)) {
-            return true;
-        }
 
         for (int i = 0; i < N - 1; i++) {
             if (F[i] > F[i + 1]) {
